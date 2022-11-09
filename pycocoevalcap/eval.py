@@ -2,6 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 __author__ = 'tylin'
+
+from .ciderR.ciderR import CiderR
 from .tokenizer.ptbtokenizer import PTBTokenizer
 from .bleu.bleu import Bleu
 from .meteor.meteor import Meteor
@@ -47,6 +49,7 @@ class COCOEvalCap:
             (Meteor(),"METEOR"),
             (Rouge(), "ROUGE_L"),
             (Cider(), "CIDEr"),
+            (CiderR(), "CIDEr-R"),
             (self.Spice, "SPICE"),
             (WMD(),   "WMD"),
         ]

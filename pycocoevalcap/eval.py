@@ -10,7 +10,6 @@ from .meteor.meteor import Meteor
 from .rouge.rouge import Rouge
 from .cider.cider import Cider
 from .spice.spice import Spice
-from .wmd.wmd import WMD
 
 class COCOEvalCap:
     def __init__(self, coco, cocoRes):
@@ -51,7 +50,7 @@ class COCOEvalCap:
             (Cider(), "CIDEr"),
             (CiderR(), "CIDEr-R"),
             (self.Spice, "SPICE"),
-            (WMD(),   "WMD"),
+            # (WMD(),   "WMD"),
         ]
 
         # =================================================

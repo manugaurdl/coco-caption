@@ -58,7 +58,6 @@ class COCOEvalCap:
         # =================================================
         for scorer, method in scorers:
             print('computing %s score...'%(scorer.method()))
-            import ipdb;ipdb.set_trace()
             score, scores = scorer.compute_score(gts, res)
             if type(method) == list:
                 for sc, scs, m in zip(score, scores, method):
